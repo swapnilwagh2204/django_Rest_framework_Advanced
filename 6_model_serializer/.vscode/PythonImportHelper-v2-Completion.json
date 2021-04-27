@@ -64,20 +64,11 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "response",
+        "importPath": "django.http",
+        "description": "django.http",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "JsonResponse",
-        "importPath": "django.http.response",
-        "description": "django.http.response",
-        "isExtraImport": true,
-        "detail": "django.http.response",
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -89,60 +80,19 @@
         "documentation": {}
     },
     {
-        "label": "io",
-        "kind": 6,
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
         "isExtraImport": true,
-        "importPath": "io",
-        "description": "io",
-        "detail": "io",
+        "detail": "rest_framework.decorators",
         "documentation": {}
     },
     {
-        "label": "JSONParser",
-        "importPath": "rest_framework.parsers",
-        "description": "rest_framework.parsers",
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
         "isExtraImport": true,
-        "detail": "rest_framework.parsers",
-        "documentation": {}
-    },
-    {
-        "label": "JSONRenderer",
-        "importPath": "rest_framework.renderers",
-        "description": "rest_framework.renderers",
-        "isExtraImport": true,
-        "detail": "rest_framework.renderers",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "csrf_exempt",
-        "importPath": "django.views.decorators.csrf",
-        "description": "django.views.decorators.csrf",
-        "isExtraImport": true,
-        "detail": "django.views.decorators.csrf",
-        "documentation": {}
-    },
-    {
-        "label": "View",
-        "importPath": "django.views.generic.base",
-        "description": "django.views.generic.base",
-        "isExtraImport": true,
-        "detail": "django.views.generic.base",
-        "documentation": {}
-    },
-    {
-        "label": "method_decorator",
-        "importPath": "django.utils.decorators",
-        "description": "django.utils.decorators",
-        "isExtraImport": true,
-        "detail": "django.utils.decorators",
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -213,6 +163,15 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "pro1.app1.migrations.0001_initial",
@@ -267,11 +226,11 @@
         "documentation": {}
     },
     {
-        "label": "student_api",
-        "kind": 6,
+        "label": "Hello",
+        "kind": 2,
         "importPath": "pro1.app1.views",
         "description": "pro1.app1.views",
-        "peekOfCode": "class student_api(View):\n    def get(self, request, *args, **kwargs):\n        json_data = request.body\n        stream = io.BytesIO(json_data)\n        pythondata = JSONParser().parse(stream)\n        id = pythondata.get('id', None)\n        if id is not None:\n            stu = Student.objects.get(id=id)\n            serializer = StudentSerializer(stu)\n            json_data = JSONRenderer().render(serializer.data)",
+        "peekOfCode": "def Hello(request):\n    if request.method == 'GET':\n        print(request.data)\n        return Response({'msg': 'this is get api'})\n    if request.method == 'POST':\n        print(request.data)\n        return Response({'msg': 'this is POST api'})\n# class student_api(View):\n#     def get(self, request, *args, **kwargs):\n#         json_data = request.body",
         "detail": "pro1.app1.views",
         "documentation": {}
     },
@@ -442,7 +401,7 @@
         "kind": 5,
         "importPath": "pro1.pro1.urls",
         "description": "pro1.pro1.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('student_api/', views.student_api.as_view()),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('student_api/', views.Hello),\n]",
         "detail": "pro1.pro1.urls",
         "documentation": {}
     },
@@ -469,7 +428,7 @@
         "kind": 2,
         "importPath": "frontend",
         "description": "frontend",
-        "peekOfCode": "def get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    r = requests.get(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# get_data()  # for read operation\ndef post_data():",
+        "peekOfCode": "def get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    headers = {'Content-Type': 'application/json'}\n    r = requests.get(url=url, headers=headers, data=json_data)\n    data = r.json()\n    print(data)\nget_data()  # for read operation",
         "detail": "frontend",
         "documentation": {}
     },
@@ -478,7 +437,7 @@
         "kind": 2,
         "importPath": "frontend",
         "description": "frontend",
-        "peekOfCode": "def post_data():\n    data = {'name': 'wagh',\n            'roll': 10, 'city': 'dallas'}\n    json_data = json.dumps(data)\n    r = requests.post(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# post_data()  # adding data\ndef update_data():\n    data = {",
+        "peekOfCode": "def post_data():\n    data = {'name': 'wagh',\n            'roll': 10, 'city': 'dallas'}\n    json_data = json.dumps(data)\n    headers = {'Content-Type': 'application/json'}\n    r = requests.post(url=url, headers=headers, data=json_data)\n    data = r.json()\n    print(data)\n# post_data()  # adding data\ndef update_data():",
         "detail": "frontend",
         "documentation": {}
     },
@@ -487,7 +446,7 @@
         "kind": 2,
         "importPath": "frontend",
         "description": "frontend",
-        "peekOfCode": "def update_data():\n    data = {\n        'id': 6,\n        'name': 'swapnil',\n        'roll': 33,\n        'city': 'nanded'}\n    json_data = json.dumps(data)\n    r = requests.put(url=url, data=json_data)\n    data = r.json()\n    print(data)",
+        "peekOfCode": "def update_data():\n    data = {\n        'id': 6,\n        'name': 'swapnil',\n        'roll': 33,\n        'city': 'nanded'}\n    json_data = json.dumps(data)\n    headers = {'Content-Type': 'application/json'}\n    r = requests.post(url=url, headers=headers, data=json_data)\n    data = r.json()",
         "detail": "frontend",
         "documentation": {}
     },
@@ -496,7 +455,7 @@
         "kind": 2,
         "importPath": "frontend",
         "description": "frontend",
-        "peekOfCode": "def delete_data():\n    data = {\n        'id': 3,\n    }\n    json_data = json.dumps(data)\n    r = requests.delete(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# delete_data()  # delete",
+        "peekOfCode": "def delete_data():\n    data = {\n        'id': 3,\n    }\n    json_data = json.dumps(data)\n    headers = {'Content-Type': 'application/json'}\n    r = requests.post(url=url, headers=headers, data=json_data)\n    data = r.json()\n    print(data)\n# delete_data()  # delete",
         "detail": "frontend",
         "documentation": {}
     },
@@ -505,7 +464,7 @@
         "kind": 5,
         "importPath": "frontend",
         "description": "frontend",
-        "peekOfCode": "url = \"http://127.0.0.1:8000/student_api/\"\ndef get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    r = requests.get(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# get_data()  # for read operation",
+        "peekOfCode": "url = \"http://127.0.0.1:8000/student_api/\"\ndef get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    headers = {'Content-Type': 'application/json'}\n    r = requests.get(url=url, headers=headers, data=json_data)\n    data = r.json()\n    print(data)",
         "detail": "frontend",
         "documentation": {}
     }

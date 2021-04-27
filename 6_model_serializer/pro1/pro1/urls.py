@@ -18,5 +18,5 @@ from django.urls import path
 from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('student_api/', views.student_api.as_view()),
+    path('student_api/', views.Hello),
 ]

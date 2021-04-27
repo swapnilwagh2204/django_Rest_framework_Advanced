@@ -9,19 +9,22 @@ def get_data(id=None):
     if id is not None:
         data = {'id': id}
     json_data = json.dumps(data)
-    r = requests.get(url=url, data=json_data)
+    headers = {'Content-Type': 'application/json'}
+    r = requests.get(url=url, headers=headers, data=json_data)
     data = r.json()
     print(data)
 
 
-# get_data()  # for read operation
+get_data()  # for read operation
 
 
 def post_data():
     data = {'name': 'wagh',
             'roll': 10, 'city': 'dallas'}
     json_data = json.dumps(data)
-    r = requests.post(url=url, data=json_data)
+    headers = {'Content-Type': 'application/json'}
+
+    r = requests.post(url=url, headers=headers, data=json_data)
     data = r.json()
     print(data)
 
@@ -36,12 +39,15 @@ def update_data():
         'roll': 33,
         'city': 'nanded'}
     json_data = json.dumps(data)
-    r = requests.put(url=url, data=json_data)
+
+    headers = {'Content-Type': 'application/json'}
+
+    r = requests.post(url=url, headers=headers, data=json_data)
     data = r.json()
     print(data)
 
 
-update_data()  # updating data
+# update_data()  # updating data
 
 
 def delete_data():
@@ -49,7 +55,9 @@ def delete_data():
         'id': 3,
     }
     json_data = json.dumps(data)
-    r = requests.delete(url=url, data=json_data)
+    headers = {'Content-Type': 'application/json'}
+
+    r = requests.post(url=url, headers=headers, data=json_data)
     data = r.json()
     print(data)
 
