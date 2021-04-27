@@ -1,0 +1,488 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework.decorators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "app1",
+        "description": "app1",
+        "isExtraImport": true,
+        "detail": "app1",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "pro1.app1.migrations.0001_initial",
+        "description": "pro1.app1.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=80)),",
+        "detail": "pro1.app1.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "StudentAdmin",
+        "kind": 6,
+        "importPath": "pro1.app1.admin",
+        "description": "pro1.app1.admin",
+        "peekOfCode": "class StudentAdmin(admin.ModelAdmin):\n    list_display = ['id', 'name', 'roll', 'city']\nadmin.site.register(Student, StudentAdmin)",
+        "detail": "pro1.app1.admin",
+        "documentation": {}
+    },
+    {
+        "label": "App1Config",
+        "kind": 6,
+        "importPath": "pro1.app1.apps",
+        "description": "pro1.app1.apps",
+        "peekOfCode": "class App1Config(AppConfig):\n    name = 'app1'",
+        "detail": "pro1.app1.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "pro1.app1.models",
+        "description": "pro1.app1.models",
+        "peekOfCode": "class Student(models.Model):\n    name = models.CharField(max_length=80)\n    roll = models.IntegerField()\n    city = models.CharField(max_length=80)",
+        "detail": "pro1.app1.models",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "kind": 6,
+        "importPath": "pro1.app1.serializers",
+        "description": "pro1.app1.serializers",
+        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    # name = serializers.CharField(max_length=100, validators=[start_with_r])\n    # roll = serializers.IntegerField()\n    # city = serializers.CharField(max_length=100)\n    # we use model serializers here\n    class Meta:\n        # name=Student.CharField(read_only=True) #for read_only\n        # name = serializers.CharField(max_length=100, validators=[\n        #                              start_with_r])  # to use validators\n        model = Student",
+        "detail": "pro1.app1.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "student_api",
+        "kind": 6,
+        "importPath": "pro1.app1.views",
+        "description": "pro1.app1.views",
+        "peekOfCode": "class student_api(APIView):\n    def get(self, request, pk=None, form=None):\n        id = pk\n        if id is not None:\n            stu = Student.objects.get(id=id)\n            serializer = StudentSerializer(stu)\n        else:\n            stu = Student.objects.all()\n            serializer = StudentSerializer(stu, many=True)\n        return Response(serializer.data)",
+        "detail": "pro1.app1.views",
+        "documentation": {}
+    },
+    {
+        "label": "student_api",
+        "kind": 6,
+        "importPath": "pro1.app1.views",
+        "description": "pro1.app1.views",
+        "peekOfCode": "class student_api(View):\n    def get(self, request, *args, **kwargs):\n        json_data = request.body\n        stream = io.BytesIO(json_data)\n        pythondata = JSONParser().parse(stream)\n        id = pythondata.get('id', None)\n        if id is not None:\n            stu = Student.objects.get(id=id)\n            serializer = StudentSerializer(stu)\n            json_data = JSONRenderer().render(serializer.data)",
+        "detail": "pro1.app1.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "pro1.pro1.asgi",
+        "description": "pro1.pro1.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "pro1.pro1.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'qn5@a4!j@y%y_ytct1*)&+dlxc2f+od&#c)j3s^3l&p*34b79g'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "SECRET_KEY = 'qn5@a4!j@y%y_ytct1*)&+dlxc2f+od&#c)j3s^3l&p*34b79g'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'app1'\n]",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'pro1.urls'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "ROOT_URLCONF = 'pro1.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'pro1.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "pro1.pro1.settings",
+        "description": "pro1.pro1.settings",
+        "peekOfCode": "STATIC_URL = '/static/'",
+        "detail": "pro1.pro1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "pro1.pro1.urls",
+        "description": "pro1.pro1.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    # path('hello/', views.Hello),\n    path('student_api/', views.student_api.as_view()),\n    path('student_api/<int:pk>', views.student_api.as_view()),\n]",
+        "detail": "pro1.pro1.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "pro1.pro1.wsgi",
+        "description": "pro1.pro1.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "pro1.pro1.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "pro1.manage",
+        "description": "pro1.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pro1.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "pro1.manage",
+        "documentation": {}
+    },
+    {
+        "label": "get_data",
+        "kind": 2,
+        "importPath": "frontend",
+        "description": "frontend",
+        "peekOfCode": "def get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    r = requests.get(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# get_data()  # for read operation\ndef post_data():",
+        "detail": "frontend",
+        "documentation": {}
+    },
+    {
+        "label": "post_data",
+        "kind": 2,
+        "importPath": "frontend",
+        "description": "frontend",
+        "peekOfCode": "def post_data():\n    data = {'name': 'wagh',\n            'roll': 10, 'city': 'dallas'}\n    json_data = json.dumps(data)\n    r = requests.post(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# post_data()  # adding data\ndef update_data():\n    data = {",
+        "detail": "frontend",
+        "documentation": {}
+    },
+    {
+        "label": "update_data",
+        "kind": 2,
+        "importPath": "frontend",
+        "description": "frontend",
+        "peekOfCode": "def update_data():\n    data = {\n        'id': 6,\n        'name': 'swapnil',\n        'roll': 33,\n        'city': 'nanded'}\n    json_data = json.dumps(data)\n    r = requests.put(url=url, data=json_data)\n    data = r.json()\n    print(data)",
+        "detail": "frontend",
+        "documentation": {}
+    },
+    {
+        "label": "delete_data",
+        "kind": 2,
+        "importPath": "frontend",
+        "description": "frontend",
+        "peekOfCode": "def delete_data():\n    data = {\n        'id': 3,\n    }\n    json_data = json.dumps(data)\n    r = requests.delete(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# delete_data()  # delete",
+        "detail": "frontend",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "frontend",
+        "description": "frontend",
+        "peekOfCode": "url = \"http://127.0.0.1:8000/student_api/\"\ndef get_data(id=None):\n    data = {}\n    if id is not None:\n        data = {'id': id}\n    json_data = json.dumps(data)\n    r = requests.get(url=url, data=json_data)\n    data = r.json()\n    print(data)\n# get_data()  # for read operation",
+        "detail": "frontend",
+        "documentation": {}
+    }
+]
